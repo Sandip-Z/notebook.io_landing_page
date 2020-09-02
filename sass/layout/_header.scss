@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right, $color-greyish, $color-yellowish),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 98%, 0 100%);
+  .nav {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    .logo {
+      height: 19px;
+    }
+  }
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: $color-whitesmoke;
+    .subtitle {
+      display: block;
+      letter-spacing: 1.9px;
+    }
+
+    .title {
+      display: block;
+      font-size: 40px;
+      letter-spacing: 15px;
+    }
+  }
+}
