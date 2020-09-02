@@ -12,17 +12,12 @@ body {
 .header {
   position: relative;
   height: 100vh;
+  z-index: -1;
   background-image: linear-gradient(to right, rgba(119, 119, 119, 0.801), #cccc77b6), url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
   /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
   clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 98%, 0 100%); }
-  .header .nav {
-    position: absolute;
-    top: 25px;
-    left: 25px; }
-    .header .nav .logo {
-      height: 19px; }
   .header .heading {
     position: absolute;
     top: 50%;
@@ -37,3 +32,45 @@ body {
       display: block;
       font-size: 40px;
       letter-spacing: 15px; }
+
+.nav {
+  position: fixed;
+  z-index: 2;
+  background-color: #161616;
+  width: 100%;
+  box-shadow: 1px 2px 15px black;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 15px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+  .nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 45px;
+    color: whitesmoke; }
+  .nav .menu {
+    list-style: none;
+    display: flex;
+    margin: 0px 45px; }
+    .nav .menu li {
+      padding: 15px;
+      transition: all 0.5s; }
+      .nav .menu li a {
+        text-decoration: none; }
+        .nav .menu li a:link, .nav .menu li a:visited {
+          color: whitesmoke; }
+      .nav .menu li:hover {
+        background-color: #f1c40f;
+        transition: all 0.5s;
+        color: #161616; }
+      .nav .menu li.hot a {
+        padding: 7px 15px;
+        border-radius: 5px;
+        background-color: #f1c40f;
+        color: #161616;
+        border: 1px solid #f2ca27; }
+        .nav .menu li.hot a:hover {
+          box-shadow: 10px 2px #aa8a0a 58%; }
+      .nav .menu li:active {
+        background-color: #aa8a0a; }

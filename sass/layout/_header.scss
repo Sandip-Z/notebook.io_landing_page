@@ -1,20 +1,22 @@
 .header {
+  // display: none;
   position: relative;
   height: 100vh;
+  z-index: -1;
   background-image: linear-gradient(to right, $color-greyish, $color-yellowish),
     url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
   /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
   clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 98%, 0 100%);
-  .nav {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    .logo {
-      height: 19px;
-    }
-  }
+  //   .nav {
+  //     position: absolute;
+  //     top: 25px;
+  //     left: 25px;
+  //     .logo {
+  //       height: 19px;
+  //     }
+  //   }
   .heading {
     position: absolute;
     top: 50%;

@@ -1,0 +1,55 @@
+.nav {
+  position: fixed;
+  z-index: 2;
+  background-color: $color-dark;
+  width: 100%;
+  box-shadow: 1px 2px 15px darken($color-dark, 22%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 15px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 45px;
+    color: $color-whitesmoke;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0px 45px;
+    li {
+      padding: 15px;
+      transition: all 0.5s;
+      a {
+        text-decoration: none;
+
+        &:link,
+        &:visited {
+          color: $color-whitesmoke;
+        }
+      }
+      &:hover {
+        background-color: $color-sunflower;
+        transition: all 0.5s;
+        color: $color-dark;
+      }
+      &.hot a {
+        padding: 7px 15px;
+        border-radius: 5px;
+        background-color: $color-sunflower;
+        color: $color-dark;
+        border: 1px solid lighten($color-sunflower, 5%);
+        &:hover {
+          box-shadow: 10px 2px darken($color-sunflower, 15%) 58%;
+        }
+      }
+      &:active {
+        background-color: darken($color-sunflower, 15%);
+      }
+    }
+  }
+}
