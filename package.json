@@ -1,0 +1,14 @@
+{
+  "name": "notebook.io",
+  "version": "1.0.0",
+  "description": "Sass\u001b[1;5D\u001b[1;5D\u001b[D\u001b[DConvert css into sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandip Satyal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
