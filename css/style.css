@@ -9,10 +9,24 @@ body {
   /* background-color: red; */
   font-family: "Courier New", Courier, monospace; }
 
+.start {
+  display: flex;
+  margin: 15px auto;
+  padding: 15px 25px;
+  border-radius: 15px;
+  background-color: #f1c40f;
+  border: 0px;
+  transition: all 0.2s;
+  letter-spacing: 2px; }
+  .start:hover {
+    background-color: #f5d657;
+    transition: all 0.2s; }
+  .start:active {
+    background-color: #aa8a0a; }
+
 .header {
   position: relative;
   height: 100vh;
-  z-index: -1;
   background-image: linear-gradient(to right, rgba(119, 119, 119, 0.801), #cccc77b6), url(../img/bg.jpg);
   background-size: cover;
   background-position: center;

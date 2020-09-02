@@ -1,0 +1,17 @@
+.start {
+  display: flex;
+  margin: 15px auto;
+  padding: 15px 25px;
+  border-radius: 15px;
+  background-color: $color-sunflower;
+  border: 0px;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: lighten($color-sunflower, 15%);
+    transition: all 0.2s;
+  }
+  &:active {
+    background-color: darken($color-sunflower, 15%);
+  }
+}
