@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &.login-form {
+    // background-color: red;
+    section {
+      margin: 10px 0px;
+    }
+    &.buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  input {
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    width: 270px;
+  }
+
+  input[type="email"]:not(:placeholder-shown):invalid {
+    border: 1px solid orangered;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  button[type="submit"] {
+    background-color: $color-sunflower;
+    border: 0px;
+    // margin: 0px 65px;
+    padding: 10px 25px;
+
+    &:hover {
+      background-color: lighten($color-sunflower, 15%);
+      cursor: pointer;
+    }
+  }
+  small {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
