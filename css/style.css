@@ -29,15 +29,19 @@ form {
   display: flex;
   flex-direction: column;
   margin: auto; }
-  form.login-form section {
-    margin: 10px 0px; }
-  form.login-form.buttons {
-    display: flex;
-    justify-content: space-between; }
+  form.login-form {
+    margin-top: 50px; }
+    form.login-form section {
+      margin: 10px 0px; }
+    form.login-form.buttons {
+      display: flex;
+      justify-content: space-between; }
   form input {
     padding: 10px;
     border: 1px solid #cecece;
     width: 270px; }
+    form input:focus {
+      border-color: #2980b9; }
   form input[type="email"]:not(:placeholder-shown):invalid {
     border: 1px solid orangered; }
   form label {
@@ -59,6 +63,16 @@ form {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: #2980b9; }
+    .buttons small:hover {
+      text-decoration: underline; }
+
+a.signup-text {
+  margin-top: 25px;
+  color: #2980b9;
+  font-size: 14px;
+  text-decoration: none; }
+  a.signup-text:hover {
     text-decoration: underline; }
 
 .header {
@@ -134,8 +148,8 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #777;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #777;
     box-shadow: 3px 4px 25px #777; }
     .login-screen__wrapper .row {
       width: 1140px; }

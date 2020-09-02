@@ -5,6 +5,7 @@ form {
 
   &.login-form {
     // background-color: red;
+    margin-top: 50px;
     section {
       margin: 10px 0px;
     }
@@ -17,6 +18,9 @@ form {
     padding: 10px;
     border: 1px solid rgb(206, 206, 206);
     width: 270px;
+    &:focus {
+      border-color: $color-primaryblue;
+    }
   }
 
   input[type="email"]:not(:placeholder-shown):invalid {
@@ -48,6 +52,19 @@ form {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: $color-primaryblue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+a.signup-text {
+  margin-top: 25px;
+  color: $color-primaryblue;
+  font-size: 14px;
+  text-decoration: none;
+  &:hover {
     text-decoration: underline;
   }
 }
