@@ -95,12 +95,17 @@
                     <div class="col-1-of-2">
                       <section>
                         <label for="name">Full Name</label>
-                        <input id="name" type="text" required />
+                        <input
+                          id="name"
+                          type="text"
+                          required
+                          placeholder="Name"
+                        />
                       </section>
                     </div>
                     <div class="col-1-of-2">
                       <section>
-                        <label for="type">You are a</label>
+                        <label for="type">I am a</label>
                         <select id="type" required>
                           <option>Student</option>
                           <option>Teacher</option>
@@ -112,14 +117,19 @@
                   <div class="row">
                     <div class="col-1-of-2">
                       <section>
-                        <label for="email">Your Email address</label>
-                        <input id="email" type="email" required />
+                        <label for="email">Email</label>
+                        <input
+                          id="email"
+                          type="email"
+                          required
+                          placeholder="Email"
+                        />
                       </section>
                     </div>
                     <div class="col-1-of-2">
                       <section>
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" />
+                        <input type="tel" id="phone" placeholder="Ph no" />
                       </section>
                     </div>
                   </div>
@@ -127,13 +137,13 @@
                     <div class="col-1-of-2">
                       <section>
                         <label for="country">Country</label>
-                        <input type="text" id="country" />
+                        <input type="text" id="country" placeholder="Country" />
                       </section>
                     </div>
                     <div class="col-1-of-2">
                       <section>
-                        <label for="country">City</label>
-                        <input type="text" id="city" />
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="City" />
                       </section>
                     </div>
                   </div>
@@ -141,31 +151,44 @@
                     <div class="col-1-of-2">
                       <section>
                         <label for="password">Password</label>
-                        <input type="password" id="password" />
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="Password"
+                        />
                       </section>
                     </div>
                     <div class="col-1-of-2">
                       <section>
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" />
+                        <input
+                          type="password"
+                          id="confirm_password"
+                          placeholder="Confirm password"
+                        />
                       </section>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-1-of-1">
                       <label>Gender</label>
-                      <section>
-                        <label for="male">Male</label>
+                      <section class="d-flex justify-content-between">
                         <input id="male" type="radio" />
-                        <label for="female">Female</label>
+                        <label for="male">Male</label>
                         <input id="female" type="radio" />
-                        <label for="other">Other</label>
+                        <label for="female">Female</label>
                         <input id="other" type="radio" />
+                        <label for="other">Other</label>
                       </section>
                     </div>
                   </div>
-                  <button>Next Step <span>&#8594;</span></button>
-                  <p>Already have an account? Log in.</p>
+                  <button class="register__button">
+                    Next Step <span>&#8594;</span>
+                  </button>
+                  <small class="signin-text"
+                    >Already have an account?
+                    <a href="#login">Sign in.</a></small
+                  >
                 </form>
               </div>
             </div>

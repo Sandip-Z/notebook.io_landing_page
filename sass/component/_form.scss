@@ -3,6 +3,20 @@ form {
   // flex-direction: column;
   // margin: auto;
 
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    margin-bottom: 25px;
+    &:focus {
+      border-color: $color-primaryblue;
+    }
+  }
+
+  input[type="email"]:not(:placeholder-shown):invalid {
+    border: 1px solid orangered;
+  }
+
   &.login-form {
     // background-color: red;
     margin-top: 50px;
@@ -13,18 +27,6 @@ form {
       display: flex;
       justify-content: space-between;
     }
-  }
-  input {
-    padding: 10px;
-    border: 1px solid rgb(206, 206, 206);
-    // width: 270px;
-    &:focus {
-      border-color: $color-primaryblue;
-    }
-  }
-
-  input[type="email"]:not(:placeholder-shown):invalid {
-    border: 1px solid orangered;
   }
   label {
     display: block;
@@ -59,7 +61,8 @@ form {
   }
 }
 
-a.signup-text {
+a.signup-text,
+a.signin-text {
   margin-top: 25px;
   color: $color-primaryblue;
   font-size: 14px;
