@@ -7,13 +7,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Syne&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Welcome to notebook</title>
   </head>
   <body>
-    <nav class="nav d-none">
+    <nav class="nav">
       <div class="logo">
-        <p>notebook.io</p>
+        <p class="m-auto">notebook.io</p>
       </div>
       <ul class="menu">
         <li><a href="#">Home</a></li>
@@ -32,10 +36,10 @@
     <section class="login-screen" id="login">
       <div class="login-screen__wrapper">
         <div class="row">
-          <div class="col-1-of-2 login-screen__wrapper__image">
+          <div class="col-lg-6 login-screen__wrapper__image d-flex">
             <p>Placeholder text as a tag line.</p>
           </div>
-          <div class="col-1-of-2">
+          <div class="col-lg-6">
             <form class="login-form">
               <section>
                 <label for="email">Email</label>
@@ -67,19 +71,19 @@
     </section>
     <section class="register-screen" id="register">
       <div class="row">
-        <div class="col-1-of-3 register-screen__sidepanel">&nbsp;</div>
-        <div class="col-2-of-3 register-screen__contentBox">
+        <div class="col-lg-4 register-screen__sidepanel">&nbsp;</div>
+        <div class="col-lg-8 register-screen__contentBox">
           <div class="row register-screen__contentBox--content">
-            <div class="col-1-of-2">
+            <div class="col-lg-6 p-0">
               <div class="register-screen__contentBox--content__videoBox">
                 <div class="d-flex">
                   <img src="img/logo.png" alt="logo" class="register-logo" />
-                  <p class="register-companyName">Notebook.io</p>
+                  <p class="register-companyName">Notebook</p>
                 </div>
                 <div class="register__playButton"><button>&#9654;</button></div>
               </div>
             </div>
-            <div class="col-1-of-2">
+            <div class="col-lg-6 p-0">
               <div class="register-screen__contentBox--content__formWrapper">
                 <div
                   class="register-screen__contentBox--content__formWrapper--heading"
@@ -92,7 +96,7 @@
                 </div>
                 <form>
                   <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-lg-12">
                       <section>
                         <label for="name">Full Name</label>
                         <input
@@ -103,7 +107,22 @@
                         />
                       </section>
                     </div>
-                    <div class="col-1-of-2">
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <section>
+                        <label for="email">Email</label>
+                        <input
+                          id="email"
+                          type="email"
+                          required
+                          placeholder="Email"
+                        />
+                      </section>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
                       <section>
                         <label for="type">I am a</label>
                         <select id="type" required>
@@ -115,40 +134,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-1-of-2">
-                      <section>
-                        <label for="email">Email</label>
-                        <input
-                          id="email"
-                          type="email"
-                          required
-                          placeholder="Email"
-                        />
-                      </section>
-                    </div>
-                    <div class="col-1-of-2">
-                      <section>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Ph no" />
-                      </section>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-1-of-2">
-                      <section>
-                        <label for="country">Country</label>
-                        <input type="text" id="country" placeholder="Country" />
-                      </section>
-                    </div>
-                    <div class="col-1-of-2">
-                      <section>
-                        <label for="city">City</label>
-                        <input type="text" id="city" placeholder="City" />
-                      </section>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-lg-12">
                       <section>
                         <label for="password">Password</label>
                         <input
@@ -158,7 +144,9 @@
                         />
                       </section>
                     </div>
-                    <div class="col-1-of-2">
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
                       <section>
                         <label for="confirm_password">Confirm Password</label>
                         <input
@@ -170,7 +158,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-1-of-1">
+                    <div class="col-lg-12">
                       <label>Gender</label>
                       <section
                         class="d-flex justify-content-between align-items-center"

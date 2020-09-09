@@ -28,6 +28,7 @@ body {
 form input,
 form select {
   padding: 10px;
+  width: 100%;
   border: 1px solid #cecece;
   margin-bottom: 25px; }
   form input:focus,
@@ -35,10 +36,11 @@ form select {
     border-color: #2980b9; }
 
 form input[type="email"]:not(:placeholder-shown):invalid {
-  border: 1px solid orangered; }
+  border: 1px solid red; }
 
 form.login-form {
-  margin-top: 50px; }
+  margin: auto;
+  padding: 50px; }
   form.login-form section {
     margin: 10px 0px; }
   form.login-form.buttons {
@@ -70,6 +72,8 @@ form label {
 
 a.signup-text,
 a.signin-text {
+  display: flex;
+  justify-content: center;
   margin-top: 25px;
   color: #2980b9;
   font-size: 14px;
@@ -185,21 +189,15 @@ a.signin-text {
   position: relative; }
   .login-screen__wrapper {
     position: absolute;
+    width: 900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: whitesmoke;
     color: #777;
     box-shadow: 3px 4px 25px #777; }
-    .login-screen__wrapper .row {
-      width: 1140px; }
-      .login-screen__wrapper .row .col-lg-6 {
-        width: calc(100% / 2);
-        float: left;
-        display: flex; }
     .login-screen__wrapper__image {
       width: 100%;
-      height: 350px;
       background-image: linear-gradient(to left, #1abc9c96, #16a084cb), url("../../img/file-20171219-27562-ihj0n0.webp");
       background-size: cover; }
       .login-screen__wrapper__image p {
@@ -213,7 +211,8 @@ a.signin-text {
 
 .register-screen {
   height: 100vh;
-  padding: 0px !important; }
+  padding: 0px !important;
+  margin-bottom: 300px; }
   .register-screen input[type="radio"] {
     margin: auto 0; }
   .register-screen.row {
@@ -236,7 +235,7 @@ a.signin-text {
       .register-screen__contentBox--content__videoBox {
         position: relative;
         width: 100%;
-        height: 662px;
+        height: 837px;
         padding-left: 25px;
         padding-top: 25px;
         background-image: linear-gradient(to right, rgba(39, 17, 161, 0.651), rgba(21, 65, 160, 0.521)), url("../../img/register.jpg");
@@ -265,18 +264,20 @@ a.signin-text {
             border-bottom-width: 7px; }
 
 .lang {
+  display: flex;
+  align-items: center;
   background-color: #2901da;
   color: white;
   border-radius: 50%;
-  padding: 9px;
-  margin: 0px 7px;
-  font-size: 12px; }
+  padding: 7px 12px;
+  font-size: 11px; }
 
 .cross {
   padding: 6px 12px;
-  background-color: darkgray;
+  background-color: beige;
   border-radius: 50%;
-  color: black; }
+  color: black;
+  margin-left: 5px; }
   .cross a {
     text-decoration: none;
     color: inherit; }
@@ -298,7 +299,7 @@ a.signin-text {
   left: 50%;
   transform: translate(-50%, -50%); }
   .register__playButton button {
-    padding: 14px 17px;
+    padding: 14px 19px;
     background-color: rgba(255, 255, 255, 0.555);
     border-radius: 50%;
     border: 0; }
@@ -325,6 +326,9 @@ a.signin-text {
     font-weight: 700; }
 
 .signin-text {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
   font-size: 12px; }
+  .signin-text a {
+    padding: 0 3px; }

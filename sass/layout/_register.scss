@@ -1,7 +1,7 @@
 .register-screen {
   height: 100vh;
   padding: 0px !important;
-
+  margin-bottom: 300px;
   input[type="radio"] {
     margin: auto 0;
   }
@@ -27,7 +27,7 @@
       &__videoBox {
         position: relative;
         width: 100%;
-        height: 662px;
+        height: 837px;
         padding-left: 25px;
         padding-top: 25px;
         background-image: linear-gradient(
@@ -71,19 +71,22 @@
 }
 
 .lang {
+  display: flex;
+  align-items: center;
   background-color: rgb(41, 1, 218);
   color: white;
   border-radius: 50%;
-  padding: 9px;
-  margin: 0px 7px;
-  font-size: 12px;
+  padding: 7px 12px;
+  // margin: 0px 5px;
+  font-size: 11px;
 }
 
 .cross {
   padding: 6px 12px;
-  background-color: darkgray;
+  background-color: beige;
   border-radius: 50%;
   color: black;
+  margin-left: 5px;
   & a {
     text-decoration: none;
     color: inherit;
@@ -110,7 +113,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   & button {
-    padding: 14px 17px;
+    padding: 14px 19px;
     background-color: rgba(255, 255, 255, 0.555);
     border-radius: 50%;
     border: 0;
@@ -142,7 +145,11 @@
 }
 
 .signin-text {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
   font-size: 12px;
+  & a {
+    padding: 0 3px;
+  }
 }

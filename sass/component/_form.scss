@@ -6,6 +6,7 @@ form {
   input,
   select {
     padding: 10px;
+    width: 100%;
     border: 1px solid rgb(206, 206, 206);
     margin-bottom: 25px;
     &:focus {
@@ -14,12 +15,13 @@ form {
   }
 
   input[type="email"]:not(:placeholder-shown):invalid {
-    border: 1px solid orangered;
+    border: 1px solid red;
   }
 
   &.login-form {
     // background-color: red;
-    margin-top: 50px;
+    margin: auto;
+    padding: 50px;
     section {
       margin: 10px 0px;
     }
@@ -63,6 +65,8 @@ form {
 
 a.signup-text,
 a.signin-text {
+  display: flex;
+  justify-content: center;
   margin-top: 25px;
   color: $color-primaryblue;
   font-size: 14px;
