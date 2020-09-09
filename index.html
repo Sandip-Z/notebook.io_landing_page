@@ -91,31 +91,80 @@
                   </div>
                 </div>
                 <form>
-                  <section>
-                    <label for="name">Full Name</label>
-                    <input id="name" type="text" required />
-                  </section>
-                  <section>
-                    <label for="type">You are a</label>
-                    <select id="type" required>
-                      <option>Student</option>
-                      <option>Teacher</option>
-                      <option>Institution</option>
-                    </select>
-                  </section>
-                  <section>
-                    <label for="email">Your Email address</label>
-                    <input id="email" type="email" required />
-                  </section>
-                  <section>
-                    <label for="male">Male</label>
-                    <input id="male" type="radio" />
-                    <label for="female">Female</label>
-                    <input id="female" type="radio" />
-                    <label for="other">Other</label>
-                    <input id="other" type="radio" />
-                  </section>
-                  <button>Register</button>
+                  <div class="row">
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" required />
+                      </section>
+                    </div>
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="type">You are a</label>
+                        <select id="type" required>
+                          <option>Student</option>
+                          <option>Teacher</option>
+                          <option>Institution</option>
+                        </select>
+                      </section>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="email">Your Email address</label>
+                        <input id="email" type="email" required />
+                      </section>
+                    </div>
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" />
+                      </section>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="country">Country</label>
+                        <input type="text" id="country" />
+                      </section>
+                    </div>
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="country">City</label>
+                        <input type="text" id="city" />
+                      </section>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" />
+                      </section>
+                    </div>
+                    <div class="col-1-of-2">
+                      <section>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" />
+                      </section>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1-of-1">
+                      <label>Gender</label>
+                      <section>
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" />
+                        <label for="female">Female</label>
+                        <input id="female" type="radio" />
+                        <label for="other">Other</label>
+                        <input id="other" type="radio" />
+                      </section>
+                    </div>
+                  </div>
+                  <button>Next Step <span>&#8594;</span></button>
                   <p>Already have an account? Log in.</p>
                 </form>
               </div>
