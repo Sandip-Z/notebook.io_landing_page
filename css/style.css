@@ -7,7 +7,8 @@ body {
   font-size: 16px;
   color: #777;
   /* background-color: red; */
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "Open Sans", sans-serif;
+  font-family: "Syne", sans-serif; }
 
 .start {
   display: flex;
@@ -138,7 +139,7 @@ a.signup-text {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
-  margin: 15px auto;
+  margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
   .nav .logo {
     display: flex;
@@ -216,18 +217,25 @@ a.signup-text {
     height: 100vh;
     position: relative; }
     .register-screen__contentBox--content {
-      border: 1px solid red;
       position: absolute;
       top: 50%;
       left: 50%;
       width: 100%;
       transform: translate(-75%, -50%); }
       .register-screen__contentBox--content__videoBox {
-        background-color: #08ce08; }
+        position: relative;
+        width: 100%;
+        height: 500px;
+        padding-left: 25px;
+        padding-top: 25px;
+        background-image: linear-gradient(to right, rgba(39, 17, 161, 0.651), rgba(21, 65, 160, 0.521)), url("../../img/register.jpg");
+        background-size: cover; }
       .register-screen__contentBox--content__formWrapper {
         background-color: white;
         color: black;
-        padding: 15px; }
+        padding: 15px;
+        padding-top: 50px;
+        margin: auto; }
         .register-screen__contentBox--content__formWrapper--heading {
           display: flex;
           justify-content: space-between; }
@@ -250,8 +258,38 @@ a.signup-text {
   color: white;
   border-radius: 50%;
   padding: 7px;
-  margin: 0ox 7px; }
+  margin: 0px 7px; }
 
 .cross {
   padding: 7px 11px;
-  background-color: darkgray; }
+  background-color: darkgray;
+  border-radius: 50%;
+  color: black; }
+  .cross a {
+    text-decoration: none;
+    color: inherit; }
+  .cross:hover {
+    background-color: #cccccc; }
+
+.register-logo {
+  height: 50px; }
+
+.register-companyName {
+  margin-top: 15px;
+  padding-left: 7px;
+  color: white;
+  font-weight: 500; }
+
+.register__playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .register__playButton button {
+    padding: 14px 17px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 50%;
+    border: 0; }
+    .register__playButton button:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.705); }

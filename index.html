@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Syne&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Welcome to notebook</title>
   </head>
   <body>
-    <!-- <nav class="nav d-none">
+    <nav class="nav d-none">
       <div class="logo">
         <p>notebook.io</p>
       </div>
@@ -17,7 +21,7 @@
         <li><a href="#">About Us</a></li>
         <li class="hot"><a href="#register">Register</a></li>
       </ul>
-    </nav> -->
+    </nav>
     <header class="header">
       <div class="heading">
         <span class="title">notebook.io</span>
@@ -25,11 +29,7 @@
         <button class="start">Get Started</button>
       </div>
     </header>
-<<<<<<< HEAD
-    <div class="login-screen" id="register">
-=======
     <section class="login-screen" id="login">
->>>>>>> e7f28a07c04e33b01995ce797d8c3db247f0f66d
       <div class="login-screen__wrapper">
         <div class="row">
           <div class="col-1-of-2 login-screen__wrapper__image">
@@ -72,7 +72,11 @@
           <div class="row register-screen__contentBox--content">
             <div class="col-1-of-2">
               <div class="register-screen__contentBox--content__videoBox">
-                video here
+                <div class="d-flex">
+                  <img src="img/logo.png" alt="logo" class="register-logo" />
+                  <p class="register-companyName">Notebook.io</p>
+                </div>
+                <div class="register__playButton"><button>&#9654;</button></div>
               </div>
             </div>
             <div class="col-1-of-2">
@@ -83,12 +87,12 @@
                   <h2>Registration</h2>
                   <div class="d-flex">
                     <p class="lang">EN</p>
-                    <p class="cross">X</p>
+                    <p class="cross"><a href="#">X</a></p>
                   </div>
                 </div>
                 <form>
                   <section>
-                    <label for="name">Name</label>
+                    <label for="name">Full Name</label>
                     <input id="name" type="text" required />
                   </section>
                   <section>
