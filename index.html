@@ -7,7 +7,7 @@
     <title>Welcome to notebook</title>
   </head>
   <body>
-    <nav class="nav">
+    <!-- <nav class="nav d-none">
       <div class="logo">
         <p>notebook.io</p>
       </div>
@@ -17,7 +17,7 @@
         <li><a href="#">About Us</a></li>
         <li class="hot"><a href="#register">Register</a></li>
       </ul>
-    </nav>
+    </nav> -->
     <header class="header">
       <div class="heading">
         <span class="title">notebook.io</span>
@@ -25,13 +25,17 @@
         <button class="start">Get Started</button>
       </div>
     </header>
+<<<<<<< HEAD
     <div class="login-screen" id="register">
+=======
+    <section class="login-screen" id="login">
+>>>>>>> e7f28a07c04e33b01995ce797d8c3db247f0f66d
       <div class="login-screen__wrapper">
         <div class="row">
-          <div class="col-lg-6 login-screen__wrapper__image">
+          <div class="col-1-of-2 login-screen__wrapper__image">
             <p>Placeholder text as a tag line.</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-1-of-2">
             <form class="login-form">
               <section>
                 <label for="email">Email</label>
@@ -60,6 +64,61 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="register-screen" id="register">
+      <div class="row">
+        <div class="col-1-of-3 register-screen__sidepanel">&nbsp;</div>
+        <div class="col-2-of-3 register-screen__contentBox">
+          <div class="row register-screen__contentBox--content">
+            <div class="col-1-of-2">
+              <div class="register-screen__contentBox--content__videoBox">
+                video here
+              </div>
+            </div>
+            <div class="col-1-of-2">
+              <div class="register-screen__contentBox--content__formWrapper">
+                <div
+                  class="register-screen__contentBox--content__formWrapper--heading"
+                >
+                  <h2>Registration</h2>
+                  <div class="d-flex">
+                    <p class="lang">EN</p>
+                    <p class="cross">X</p>
+                  </div>
+                </div>
+                <form>
+                  <section>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" required />
+                  </section>
+                  <section>
+                    <label for="type">You are a</label>
+                    <select id="type" required>
+                      <option>Student</option>
+                      <option>Teacher</option>
+                      <option>Institution</option>
+                    </select>
+                  </section>
+                  <section>
+                    <label for="email">Your Email address</label>
+                    <input id="email" type="email" required />
+                  </section>
+                  <section>
+                    <label for="male">Male</label>
+                    <input id="male" type="radio" />
+                    <label for="female">Female</label>
+                    <input id="female" type="radio" />
+                    <label for="other">Other</label>
+                    <input id="other" type="radio" />
+                  </section>
+                  <button>Register</button>
+                  <p>Already have an account? Log in.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

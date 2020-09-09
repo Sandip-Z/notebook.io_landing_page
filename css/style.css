@@ -75,6 +75,37 @@ a.signup-text {
   a.signup-text:hover {
     text-decoration: underline; }
 
+.row {
+  max-width: 100%;
+  margin: 0px auto; }
+  .row:not(:last-child) {
+    margin-bottom: 81px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 0px; }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 0px) / 2); }
+  .row .col-1-of-3 {
+    width: calc(((100% - 0px * 2) / 3)); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 0px * 2) / 3) + 0px); }
+  .row .col-1-of-4 {
+    width: calc(((100% - 0px * 3) / 4)); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 0px * 3) / 4) + 0px); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 0px * 3) / 4) + 2 * 0px); }
+
+.d-flex {
+  display: flex; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -170,3 +201,57 @@ a.signup-text {
         padding: 15px;
         margin: auto;
         color: black; }
+
+.register-screen {
+  height: 100vh;
+  padding: 0px !important; }
+  .register-screen.row {
+    margin: 0px !important; }
+  .register-screen__sidepanel {
+    background-image: linear-gradient(to top, blue, rgba(16, 16, 129, 0.685));
+    display: block;
+    height: 100vh; }
+  .register-screen__contentBox {
+    background-color: beige;
+    height: 100vh;
+    position: relative; }
+    .register-screen__contentBox--content {
+      border: 1px solid red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-75%, -50%); }
+      .register-screen__contentBox--content__videoBox {
+        background-color: #08ce08; }
+      .register-screen__contentBox--content__formWrapper {
+        background-color: white;
+        color: black;
+        padding: 15px; }
+        .register-screen__contentBox--content__formWrapper--heading {
+          display: flex;
+          justify-content: space-between; }
+          .register-screen__contentBox--content__formWrapper--heading__lang {
+            background-color: #2f00ff;
+            color: white;
+            border-radius: 50%;
+            padding: 7px;
+            margin: 0 7px; }
+          .register-screen__contentBox--content__formWrapper--heading__cross {
+            padding: 7px 9px;
+            background-color: grey; }
+          .register-screen__contentBox--content__formWrapper--heading h2 {
+            text-transform: uppercase;
+            border-bottom: 1px;
+            border-bottom-width: 7px; }
+
+.lang {
+  background-color: #2901da;
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 0ox 7px; }
+
+.cross {
+  padding: 7px 11px;
+  background-color: darkgray; }

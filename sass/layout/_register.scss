@@ -1,0 +1,67 @@
+.register-screen {
+  height: 100vh;
+  padding: 0px !important;
+  &.row {
+    margin: 0px !important;
+  }
+  &__sidepanel {
+    background-image: linear-gradient(to top, blue, rgba(16, 16, 129, 0.685));
+    display: block;
+    height: 100vh;
+  }
+  &__contentBox {
+    background-color: beige;
+    height: 100vh;
+    position: relative;
+    &--content {
+      border: 1px solid red;
+      //   margin-left: -25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-75%, -50%);
+      &__videoBox {
+        background-color: rgb(8, 206, 8);
+      }
+      &__formWrapper {
+        background-color: white;
+        color: black;
+        padding: 15px;
+        &--heading {
+          display: flex;
+          justify-content: space-between;
+          &__lang {
+            background-color: rgb(47, 0, 255);
+            color: white;
+            border-radius: 50%;
+            padding: 7px;
+            margin: 0 7px;
+          }
+          &__cross {
+            padding: 7px 9px;
+            background-color: grey;
+          }
+          & h2 {
+            text-transform: uppercase;
+            border-bottom: 1px;
+            border-bottom-width: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lang {
+  background-color: rgb(41, 1, 218);
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 0px 7px;
+}
+
+.cross {
+  padding: 7px 11px;
+  background-color: darkgray;
+}
