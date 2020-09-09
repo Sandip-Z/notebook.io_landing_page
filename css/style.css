@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   color: #777;
   /* background-color: red; */
-  font-family: "Courier New", Courier, monospace; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
 .start {
   display: flex;
@@ -216,10 +216,10 @@ a.signin-text {
   .register-screen__sidepanel {
     background-image: linear-gradient(to top, blue, rgba(16, 16, 129, 0.685));
     display: block;
-    height: 100vh; }
+    height: 120vh; }
   .register-screen__contentBox {
     background-color: beige;
-    height: 100vh;
+    height: 120vh;
     position: relative; }
     .register-screen__contentBox--content {
       position: absolute;
@@ -231,7 +231,7 @@ a.signin-text {
       .register-screen__contentBox--content__videoBox {
         position: relative;
         width: 100%;
-        height: 640px;
+        height: 660px;
         padding-left: 25px;
         padding-top: 25px;
         background-image: linear-gradient(to right, rgba(39, 17, 161, 0.651), rgba(21, 65, 160, 0.521)), url("../../img/register.jpg");
@@ -263,11 +263,12 @@ a.signin-text {
   background-color: #2901da;
   color: white;
   border-radius: 50%;
-  padding: 7px;
-  margin: 0px 7px; }
+  padding: 9px;
+  margin: 0px 7px;
+  font-size: 12px; }
 
 .cross {
-  padding: 7px 11px;
+  padding: 6px 12px;
   background-color: darkgray;
   border-radius: 50%;
   color: black; }
