@@ -237,10 +237,18 @@ a.signin-text {
     background-image: linear-gradient(to top, blue, rgba(16, 16, 129, 0.685));
     display: block;
     height: 120vh; }
+    @media (max-width: 990px) {
+      .register-screen__sidepanel {
+        height: 350px; } }
   .register-screen__contentBox {
     background-color: beige;
     height: 120vh;
     position: relative; }
+    @media (max-width: 990px) {
+      .register-screen__contentBox {
+        position: relative;
+        margin: 0 15px;
+        background-color: white; } }
     .register-screen__contentBox--content {
       position: absolute;
       top: 50%;
@@ -248,6 +256,10 @@ a.signin-text {
       width: 100%;
       transform: translate(-75%, -50%);
       box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); }
+      @media (max-width: 992px) {
+        .register-screen__contentBox--content {
+          top: 24%;
+          left: 75%; } }
       .register-screen__contentBox--content__videoBox {
         position: relative;
         width: 100%;
@@ -256,6 +268,9 @@ a.signin-text {
         padding-top: 25px;
         background-image: linear-gradient(to right, rgba(39, 17, 161, 0.651), rgba(21, 65, 160, 0.521)), url("../../img/register.jpg");
         background-size: cover; }
+        @media (max-width: 990px) {
+          .register-screen__contentBox--content__videoBox {
+            height: 250px; } }
       .register-screen__contentBox--content__formWrapper {
         background-color: white;
         color: black;
