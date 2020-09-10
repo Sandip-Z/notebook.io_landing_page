@@ -26,13 +26,20 @@
     color: $color-whitesmoke;
     .subtitle {
       display: block;
-      letter-spacing: 1.9px;
+      letter-spacing: 2.5px;
+      @media (max-width: 490px) {
+        padding-top: 10px;
+        text-align: center;
+      }
     }
 
     .title {
       display: block;
       font-size: 40px;
       letter-spacing: 15px;
+      @media (max-width: 490px) {
+        font-size: 20px;
+      }
     }
   }
 }
